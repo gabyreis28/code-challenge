@@ -1,0 +1,38 @@
+{
+  "name": "code-challange/gabriela",
+  "authors": [
+    {
+      "name": "Gabriela Dias",
+      "email": "gabriela.dias.97@hotmail.com",
+      "homepage": "http://linkedin.com/in/gabrieladiasreis"
+    }
+  ],
+  "scripts": {
+    "up": "docker-compose up -d",
+    "down": "docker-compose down",
+    "logs": "docker-compose logs --tail='all' -f",
+    "build": "docker-compose build",
+    "lint": "./vendor/bin/phplint",
+    "test": "./vendor/bin/phpunit"
+  },
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/"
+    },
+    "files": [
+      "src/Config.php",
+      "src/Helpers.php"
+    ]
+  },
+  "require": {
+    "coffeecode/router": "^1.0",
+    "league/plates": "v4.0.0-alpha"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "overtrue/phplint": "^2.3"
+  }
+}
