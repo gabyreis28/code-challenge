@@ -1,0 +1,8 @@
+php:
+  container_name: code-challenge
+  build: .
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ${APP_DIR}:/var/www/html
