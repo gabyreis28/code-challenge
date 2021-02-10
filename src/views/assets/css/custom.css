@@ -1,0 +1,17 @@
+.container {
+  max-width: 960px !important;
+}
+
+.col-form-label {
+  padding-top: 0;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 2rem 10px 2rem 37px;
+}
+
+.container-fluid .row {
+  margin-left: 45px;
+  text-align: center;
+}
